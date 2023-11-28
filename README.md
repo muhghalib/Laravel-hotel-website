@@ -1,8 +1,19 @@
+# Laravel Hotel Website
+
+[![composer.lock available](https://poser.pugx.org/pugx/badge-poser/composerlock)](https://packagist.org/packages/pugx/badge-poser)
+
 ## How to run this app?
 
-You can run this app by follow this instruction:
+1. Change your php version into **^v7.4.30**
+2. Set your database information at env
+3. Run `composer install` and then `npm install`
+4. Run `php artisan key:generate` to generate app key
+5. Run `php artisan migrate --seed` to migrate the database table
 
--   run composer install and php artisan generate:key.
--   after that set your default database to env and run php artisan migrate fresh::seed.
--   for check admin you can use username: admin and password: admin123, for tamu username: tamu and password: admin123, for resepsionis username:resepsionis and password: admin123.
--   Or if you want to register feature, you can set your own api email by configuring it in your env.
+## Login credentials
+
+| username    |    password    |
+| ----------- | :------------: |
+| admin       |    admin123    |
+| tamu        |    tamu123     |
+| resepsionis | resepsionis123 |
